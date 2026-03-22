@@ -12,7 +12,7 @@ export interface Listing {
 }
 
 const EDGE_FUNCTION_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/search-listings`;
-const TOTAL_QUERIES = 15;
+const TOTAL_QUERIES = 5;
 
 export function useListingAgent() {
   const [listings, setListings] = useState<Listing[]>([]);
